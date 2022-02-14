@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        <title>萨莉亚随机点菜</title>
+    </head>
+
+    <body>
+        <div style="display: block;">
+            <input type="button" value="随机菜" onclick="randomDish(0);">
+            <input type="button" value="沙拉" onclick="randomDish(1);">
+            <input type="button" value="汤" onclick="randomDish(2);">
+            <input type="button" value="烤饼" onclick="randomDish(3);">
+            <input type="button" value="蔬菜" onclick="randomDish(4);">
+            <input type="button" value="前菜" onclick="randomDish(5);">
+            <input type="button" value="匹萨" onclick="randomDish(6);">
+            <input type="button" value="意面" onclick="randomDish(7);">
+            <input type="button" value="焗饭" onclick="randomDish(8);">
+            <input type="button" value="烤饭" onclick="randomDish(9);">
+            <input type="button" value="烩饭" onclick="randomDish(10);">
+            <input type="button" value="主菜" onclick="randomDish(11);">
+            <input type="button" value="甜品" onclick="randomDish(12);">
+            <input type="button" value="饮料" onclick="randomDish(13);">
+        </div>
+        <div style="display: block;">
+            按预算
+            <input type="text" id="price" value="16" onchange="setPrice();">
+            <input type="button" value="不重复" onclick="randomDishOnPrice();">
+            <input type="button" value="有重复" onclick="randomDishDuplicate();">
+        </div>
+        <div style="display: block;">
+            按份数
+            <input type="text" id="copies" value="1" onchange="setCopies();">
+            <input type="button" value="不重复" onclick="randomDishOnCopies();">
+            <input type="button" value="有重复" onclick="randomCopiesDuplicate();">
+        </div>
+        <div>
+            <p id="title" style="display: block;"></p>
+        </div>
+        <script type="text/javascript" src="priceToId.js"></script>
+        <script type="text/javascript" src="menu.js"></script>
+        <script type="text/javascript" src="random.js"></script>
+    </body>
+</html>
